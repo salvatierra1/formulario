@@ -13,22 +13,8 @@
 <body>
 
 
-    <script>
-        function postTodo() {
-            axios({
-                    method: 'POST',
-                    url: 'http://localhost:8080/invitado',
-                    data: {
-                        name: "name",
-                        apellido: "apellido",
-                        dni: "dni",
-                        telefono: "telefono",
-                    }
-                })
-                .then((res) => setIn(res.data));
-        }
-    </script>
-    <form class="form" onsubmit={(e) { e.setIn(); postTodo(); } }>
+  
+    <form class="form">
         <h2 class="titulo">Datos personales</h2>
         <div class="contenedor">
             <div class="campos">
